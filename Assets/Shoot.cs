@@ -7,7 +7,7 @@ public class Shoot : MonoBehaviour
     // Start is called before the first frame update
     public float AimX;
     public float AimY;
-    private bool firstDown;
+    public bool firstDown;
     void Start()
     {
         firstDown = true;
