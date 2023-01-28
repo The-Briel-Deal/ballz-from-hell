@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - unfiredCylinder
+  - LevelOneMainLight
+  - AudioScript
+  - HellLaser
   layers:
   - Default
   - TransparentFX

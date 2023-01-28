@@ -5,23 +5,24 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int TriggerFrame;
+    public int Frame;
     public float AimX;
     public float AimY;
+    public float AimZ;
     public bool firstDown;
     void Start()
     {
-        firstDown = true;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1) && firstDown)
+        if (Frame == TriggerFrame)
         {
-            GameObject.Instantiate(gameObject);
-            firstDown = false;
-            gameObject.tag = "Untagged";
-            gameObject.GetComponent<Rigidbody>().velocity += new Vector3(-20, -10 + AimY, AimX);
+            gameObject.GetComponent<Rigidbody>().velocity += new Vector3(AimX ,AimY, AimZ);
+            gameObject.GetComponent<AudioSource>().Play();
         }
+        Frame += 1;
     }
 }

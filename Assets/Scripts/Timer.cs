@@ -16,5 +16,6 @@ public class Timer : MonoBehaviour
     {
         gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = $"Time: {30 - (FixedFrames/50)}";
         FixedFrames += 1;
+
     }
 }

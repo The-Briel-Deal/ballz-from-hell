@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: f6d923c06ff7910498dd8154423eef24
+  - enabled: 1
+    path: Assets/Scenes/balls_from_hell_v0.unity
+    guid: a251557a82c4c0e4a91bd949a567ddaa
+  - enabled: 0
     path: Assets/Scenes/Main Game.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

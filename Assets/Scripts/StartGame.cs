@@ -14,6 +14,6 @@ public class StartGame : MonoBehaviour
 
 	void TaskOnClick()
 	{
-		SceneManager.LoadScene("Main Game", LoadSceneMode.Single);
+		SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
 }

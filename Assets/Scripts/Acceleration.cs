@@ -14,10 +14,8 @@ public class Acceleration : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // gameObject.GetComponent<Rigidbody>().velocity += new Vector3(0, 0, (float)0.01); // Right/Left
-        // gameObject.GetComponent<Rigidbody>().velocity += new Vector3(0, (float)0.01, 0); // Up/Down
-        // gameObject.GetComponent<Rigidbody>().velocity += new Vector3((float)0.01, 0, 0); // Forward/Backwards
-
+        if (gameObject.GetComponent<Rigidbody>().IsSleeping())
+            gameObject.GetComponent<Rigidbody>().WakeUp();
     }
 
     void FixedUpdate()
