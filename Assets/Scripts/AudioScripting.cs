@@ -8,11 +8,13 @@ public class AudioScripting : MonoBehaviour
     public AudioClip clip2;
     public AudioClip clip3;
     public AudioClip clip4;
+    public AudioClip clip5;
     public int Frame;
     public UnityEvent clip1Finished;
     public UnityEvent clip2Finished;
     public UnityEvent clip3Finished;
     public UnityEvent clip4Finished;
+    public UnityEvent clip5Finished;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +52,11 @@ public class AudioScripting : MonoBehaviour
         audioSource.clip = clip4;
         audioSource.Play();
         yield return new WaitForSeconds(audioSource.clip.length-1);
-        print("invoking");
         clip4Finished.Invoke();
+        yield return new WaitForSeconds(4);
+        audioSource.clip = clip5;
+        audioSource.Play();
+        yield return new WaitForSeconds(audioSource.clip.length - 1);
+        clip5Finished.Invoke();
     }
 }

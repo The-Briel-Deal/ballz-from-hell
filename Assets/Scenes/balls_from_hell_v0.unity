@@ -2813,7 +2813,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 787493601d3f1a74e982435c02c8dc2d, type: 3}
   m_Name: 
@@ -2847,13 +2847,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 85ec36bc6622b444e8590f971a77897f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 211
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5491,6 +5491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HellLaser: {fileID: 7157986672821084132, guid: 208737719a9d73f4e97c9d250c7e13b4, type: 3}
+  Platform: {fileID: 1555944933}
 --- !u!4 &1684279780
 Transform:
   m_ObjectHideFlags: 0
@@ -6294,7 +6295,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 57
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6402,6 +6403,7 @@ MonoBehaviour:
   clip2: {fileID: 8300000, guid: 594dcdd48b4cbb04ca8d5d17e0e506e7, type: 3}
   clip3: {fileID: 8300000, guid: 1ad81da51dfa90146a13064e4d498305, type: 3}
   clip4: {fileID: 8300000, guid: e81d14933c5d74b4eab7f60ee8531d88, type: 3}
+  clip5: {fileID: 8300000, guid: 14143987db4874548857ce6261e30b50, type: 3}
   Frame: 0
   clip1Finished:
     m_PersistentCalls:
@@ -6418,6 +6420,21 @@ MonoBehaviour:
       - m_Target: {fileID: 1684279779}
         m_TargetAssemblyTypeName: CreateLasersScript, Assembly-CSharp
         m_MethodName: LasersToCreateWhenClip4Finished
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  clip5Finished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1684279779}
+        m_TargetAssemblyTypeName: CreateLasersScript, Assembly-CSharp
+        m_MethodName: LasersToCreateWhenClip5Finished
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
